@@ -1,0 +1,29 @@
+@layer utilities {
+    .container-full {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 80rem;
+    }
+    .section{
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .faq-contents{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-top: 4rem;
+    }
+    .faq-item {
+        width: 100%;
+        display: flex;
+        padding: 2.75 4rem;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid gray;
+    }
+    
+}
