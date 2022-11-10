@@ -95,17 +95,17 @@
         >
           <div class="flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:space-y-0">
             <a
-              class="text-gray-700 lg:mx-6 dark:hover:text-blue-400 hover:text-blue-500"
+              class="text-gray-700 lg:mx-6 dark:hover:text-green-400 hover:text-green-500"
               href="#"
               >Home</a
             >
             <a
-              class="text-gray-700 lg:mx-6 dark:hover:text-blue-400 hover:text-blue-500"
+              class="text-gray-700 lg:mx-6 dark:hover:text-green-400 hover:text-green-500"
               href="#"
               >About Us</a
             >
             <a
-              class="text-gray-700 lg:mx-6 dark:hover:text-blue-400 hover:text-blue-500"
+              class="text-gray-700 lg:mx-6 dark:hover:text-green-400 hover:text-green-500"
               href="#"
               >Partners</a
             >
@@ -116,7 +116,7 @@
               <div
                 x-cloak
                 @click="isServicesMenuOpen = !isServicesMenuOpen"
-                class="flex items-end hover:text-blue-500 gap-x-2"
+                class="flex items-end hover:text-green-500 gap-x-2"
               >
                 <span>Services</span>
                 <svg
@@ -143,28 +143,28 @@
                 <ul class="w-full flex flex-col gap-y-4 text-sm">
                   <li class="">
                     <a
-                      class="hover:text-blue-500"
+                      class="hover:text-green-500"
                       href="/pages/services/personal.html"
                       >Personal Finance</a
                     >
                   </li>
                   <li class="">
                     <a
-                      class="hover:text-blue-500"
+                      class="hover:text-green-500"
                       href="/pages/services/student.html"
                       >Students Finance</a
                     >
                   </li>
                   <li class="">
                     <a
-                      class="hover:text-blue-500"
+                      class="hover:text-green-500"
                       href="/pages/services/products.html"
                       >Products Finance</a
                     >
                   </li>
                   <li>
                     <a
-                      class="hover:text-blue-500"
+                      class="hover:text-green-500"
                       href="/pages/services/offers.html"
                       >Offers</a
                     >
@@ -767,6 +767,133 @@
 
                 <p class="max-w-3xl px-4 text-gray-500 dark:text-gray-300">
                   Finance is available for 36, 48 or 60 months.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-3xl text-green-500 mt-16 mb-10">
+            Installment sales
+          </div>
+          <hr class="my-6 border-gray-200 dark:border-gray-700" />
+
+          <div
+            class="mt-16"
+            x-data="{ 
+            faqProductServices1: false,
+            faqProductsServices2: false,
+            activeClass: 'bg-indigo-800 focus:outline-none',
+        }"
+          >
+            <div class="gsap_animate_faq">
+              <button
+                @click="faqProductServices1 = ! faqProductServices1"
+                class="flex items-center focus:outline-none"
+              >
+                <svg
+                  :class="faqProductServices1 === true ? 'block' : 'hidden'"
+                  class="flex-shrink-0 w-6 h-6 text-green-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M20 12H4"
+                  ></path>
+                </svg>
+
+                <svg
+                  :class="faqProductServices1 === false ? 'block' : 'hidden'"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="flex-shrink-0 w-6 h-6 text-green-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4v16m8-8H4"
+                  />
+                </svg>
+
+                <h1 class="mx-4 text-lg text-gray-700 dark:text-white">
+                  What are the available amounts for Installment sales?
+                </h1>
+              </button>
+
+              <div
+                x-show="faqProductServices1"
+                x-collapse
+                class="flex mt-8 md:mx-10"
+              >
+                <span class="border border-green-500"></span>
+
+                <p class="max-w-3xl px-4 text-gray-500 dark:text-gray-300">
+                  Installment sales amounts started from SAR 4,000 up to SAR
+                  60,000
+                </p>
+              </div>
+            </div>
+
+            <hr class="my-8 border-gray-200 dark:border-gray-700" />
+
+            <div class="gsap_animate_faq">
+              <button
+                @click="faqProductsServices2 = !faqProductsServices2"
+                class="flex items-center focus:outline-none"
+              >
+                <svg
+                  :class="faqProductsServices2 === true ? 'block' : 'hidden'"
+                  class="flex-shrink-0 w-6 h-6 text-green-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M20 12H4"
+                  ></path>
+                </svg>
+
+                <svg
+                  :class="faqProductsServices2 === false ? 'block' : 'hidden'"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="flex-shrink-0 w-6 h-6 text-green-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4v16m8-8H4"
+                  />
+                </svg>
+
+                <h1 class="mx-4 text-lg text-gray-700 dark:text-white">
+                  What are the available tenors?
+                </h1>
+              </button>
+
+              <div
+                x-show="faqProductsServices2"
+                x-collapse
+                class="flex mt-8 md:mx-10"
+              >
+                <span class="border border-green-500"></span>
+
+                <p class="max-w-3xl px-4 text-gray-500 dark:text-gray-300">
+                  Customer can choose from 12, 18, 24, 30, or 36 months.
                 </p>
               </div>
             </div>

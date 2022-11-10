@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/font.css" />
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="assets/css/mian.css" />
+    <link rel="stylesheet" href="../assets/css/mian.css" />
     <!-- tailwind cdd -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="assets/js/tailwind.config.js"></script>
+    <script src="../assets/js/tailwind.config.js"></script>
     <title>Finance | Contact Us</title>
-    <link rel="stylesheet" href="assets/css/tailwind.features.css" />
+    <link rel="stylesheet" href="../assets/css/tailwind.features.css" />
     <script src="//unpkg.com/alpinejs" defer></script>
 
     <script src="https://unpkg.com/scrollreveal@4"></script>
@@ -23,7 +24,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
     ></script>
   </head>
-  <body>
+  <body dir="rtl">
     <header class="container">
       <nav
         x-data="{ isOpen: false }"
@@ -94,17 +95,17 @@
         >
           <div class="flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:space-y-0">
             <a
-              class="text-gray-700 lg:mx-6 dark:hover:text-blue-400 hover:text-blue-500"
+              class="text-gray-700 lg:mx-6 dark:hover:text-green-400 hover:text-green-500"
               href="#"
               >الرئيسية</a
             >
             <a
-              class="text-gray-700 lg:mx-6 dark:hover:text-blue-400 hover:text-blue-500"
+              class="text-gray-700 lg:mx-6 dark:hover:text-green-400 hover:text-green-500"
               href="#"
               >من نحن</a
             >
             <a
-              class="text-gray-700 lg:mx-6 dark:hover:text-blue-400 hover:text-blue-500"
+              class="text-gray-700 lg:mx-6 dark:hover:text-green-400 hover:text-green-500"
               href="#"
               >الشركاء</a
             >
@@ -115,7 +116,7 @@
               <div
                 x-cloak
                 @click="isServicesMenuOpen = !isServicesMenuOpen"
-                class="flex items-end hover:text-blue-500 gap-x-2"
+                class="flex items-end hover:text-green-500 gap-x-2"
               >
                 <span>الخدمات</span>
                 <svg
@@ -142,28 +143,28 @@
                 <ul class="w-full flex flex-col gap-y-4 text-sm">
                   <li class="">
                     <a
-                      class="hover:text-blue-500"
+                      class="hover:text-green-500"
                       href="/pages/services/personal.html"
                       >التمويل الشخصي</a
                     >
                   </li>
                   <li class="">
                     <a
-                      class="hover:text-blue-500"
+                      class="hover:text-green-500"
                       href="/pages/services/student.html"
                       >تمويل الطلاب</a
                     >
                   </li>
                   <li class="">
                     <a
-                      class="hover:text-blue-500"
+                      class="hover:text-green-500"
                       href="/pages/services/products.html"
                       >تمويل المنتجات</a
                     >
                   </li>
                   <li>
                     <a
-                      class="hover:text-blue-500"
+                      class="hover:text-green-500"
                       href="/pages/services/offers.html"
                       >العروض</a
                     >
@@ -171,8 +172,14 @@
                 </ul>
               </div>
             </div>
-            <a class="lg:mx-6 text-green-500" href="#">الأسئلة الشائعة</a>
-            <a class="lg:mx-6 text-gray-700" href="contact.html">الإتصال</a>
+            <a
+              class="lg:mx-6 hover:text-green-500 text-gray-700"
+              href="/ar/faq.html"
+              >الأسئلة الشائعة</a
+            >
+            <a class="lg:mx-6 hover:text-green-500 text-green-500" href="#"
+              >الإتصال</a
+            >
           </div>
 
           <a
@@ -496,6 +503,6 @@
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
     ></script>
-    <script defer src="assets/js/gsap.animation.js"></script>
+    <script defer src="../assets/js/gsap.animation.js"></script>
   </body>
 </html>
